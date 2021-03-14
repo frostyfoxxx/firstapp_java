@@ -5,72 +5,172 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        String hello = "Hello";
-        System.out.println(hello + ", World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+////        1
+//        System.out.println("Hello, World!");
 
-        // if
-//        int x = 10;
-//        int y = 20;
-//        if (x < y) {
-//            System.out.println("ЫЫЫ");
+////        2
+//
+//        String name = in.nextLine();
+//        System.out.println("Hello, " + name + "!");
+
+////        3
+//        int a = in.nextInt();
+//        int b = in.nextInt();
+//        float c = in.nextFloat();
+//        System.out.println((a + b) * c);
+
+////        5
+//        int num = in.nextInt();
+//        int result = (num / 100) + ((num / 10) % 10) + ((num % 100) % 10);
+//        System.out.println(result);
+
+//        6
+//        int num = in.nextInt();
+//        if (num % 2 == 0) {
+//            System.out.println(num + 2);
+//        }
+//        else {
+//            System.out.println(num + 1);
 //        }
 
-        // for
-        int it;
-        for (it = 0; it < 10; it = it + 1) {
-            System.out.println("Х = " + it);
-        }
+////        9
+//        int result = 0;
+//        System.out.println("Какое ваше любимое блюдо? (Вводите цифру варианта)");
+//        System.out.println("1. Борш");
+//        System.out.println("2. Пюре");
+//        System.out.println("3. Гуляш с мясом");
+//        System.out.println("4. Пицца");
+//        System.out.println("5. Плов");
+//        int response1 = in.nextInt();
+//        switch (response1) {
+//            case(1):
+//                result += 3;
+//                break;
+//            case(2):
+//                result += 5;
+//                break;
+//            case(3):
+//
+//                break;
+//            case(4):
+//                result += 10;
+//                break;
+//            case(5):
+//                result +=2;
+//                break;
+//            default:
+//                System.out.println("Выбран несуществующий вариант ответа");
+//                System.exit(1);
+//        }
+//        System.out.println("Ваше хобби? (Вводите цифру варианта)");
+//        System.out.println("1. Рисование");
+//        System.out.println("2. Решение задач по математике");
+//        System.out.println("3. Видеоигры");
+//        System.out.println("4. Программирование");
+//        System.out.println("5. Шахматы");
+//        int response2 = in.nextInt();
+//        switch (response2) {
+//            case(1):
+//                result += 3;
+//                break;
+//            case(2):
+//                result += 5;
+//                break;
+//            case(3):
+//
+//                break;
+//            case(4):
+//                result += 10;
+//                break;
+//            case(5):
+//                result +=2;
+//                break;
+//            default:
+//                System.out.println("Выбран несуществующий вариант ответа");
+//                System.exit(1);
+//        }
+//        System.out.println("Ваш любимый школьный предмет? (Вводите цифру варианта)");
+//        System.out.println("1. Математика");
+//        System.out.println("2. Литература");
+//        System.out.println("3. Физкультура");
+//        System.out.println("4. Информатика");
+//        System.out.println("5. Физика");
+//        int response3 = in.nextInt();
+//        switch (response3) {
+//            case(1):
+//                result += 3;
+//                break;
+//            case(2):
+//                result += 5;
+//                break;
+//            case(3):
+//
+//                break;
+//            case(4):
+//                result += 10;
+//                break;
+//            case(5):
+//                result +=2;
+//                break;
+//            default:
+//                System.out.println("Выбран несуществующий вариант ответа");
+//                System.exit(1);
+//        }
+//
+//        System.out.println("Ваш результат: " + result);
+//        if(result < 5) {
+//            System.out.println("Ты тупой");
+//        } else if (result >= 5 && result < 10) {
+//            System.out.println("Ты тупой, но не сильно");
+//        } else if( result >= 10 && result < 20) {
+//            System.out.println("Ты умный");
+//        } else {
+//            System.out.println("Ты гений");
+//        }
 
-//        Scanner numeric = new Scanner(System.in);
-//        System.out.println("Введите число: ");
-//        int num = numeric.nextInt();
-//        System.out.println("Ввведенное число равно: " + num);
-//        numeric.close();
+////        10
+//        int summa = 0;
+//        int num;
+//        int i = 0;
+//        do {
+//            num = in.nextInt();
+//            i++;
+//            summa += num;
+//            if (summa == 10) {
+//                System.out.println(i);
+//            }
+//
+//        } while (num != 0);
 
-//        Scanner in = new Scanner(System.in);
-//        System.out.print("Введите имя: ");
-//        String name = in.nextLine();
-//        System.out.print("Введите возраст: ");
-//        int age = in.nextInt();
-//        System.out.print("Введите рост: ");
-//        float height = in.nextFloat();
-//        System.out.printf("Имя: %s  Возраст: %d  Рост: %.2f \n", name, age, height);
-//        in.close();
+////        11
+//        String string;
+//        do {
+//            string = in.nextLine();
+//            if(string.equals("0")) {
+//                System.exit(1);
+//            }
+//            System.out.println(string);
+//        } while (!(string.equals("0")));
 
-//        if-else-if
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите номер месяца: ");
-        byte month = in.nextByte();
-        String season;
+////        12
+//        int i = 0;
+//        double flor = 0, summa = 0, request;
+//        do {
+//            request = in.nextFloat();
+//            if (request == 0.00) {
+//                flor = summa / i;
+//                summa = Math.floor(summa * 100) / 100;
+//                flor = Math.floor(flor * 100) / 100;
+//                System.out.println(i + " " + summa + " " + flor);
+//                System.exit(0);
+//            }
+//            summa += request;
+//            i++;
+//        } while (request != 0.00);
 
-        switch (month) {
-            case 12:
-            case 1:
-            case 2:
-                season = "зиме";
-                break;
-            case 3:
-            case 4:
-            case 5:
-                season = "весне";
-                break;
-            case 6:
-            case 7:
-            case 8:
-                season = "лету";
-                break;
-            case 9:
-            case 10:
-            case 11:
-                season = "осени";
-                break;
-            default:
-                season = "вымышленным месяцам";
-        }
+//        13
 
-        System.out.println("Апрель относится к " + season + ".");
 
     }
 }
